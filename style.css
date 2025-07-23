@@ -12,31 +12,28 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  font-size: 1.1rem;
-  text-align: center;
 }
 
 .recompensas {
   position: sticky;
   top: 0;
-  background: #111111cc;
   padding: 1rem;
   text-align: center;
   z-index: 10;
 }
 
 .recompensas h1 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 0.3rem;
 }
 
 .recompensas p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .premios p {
   margin: 0.3rem 0;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
 .carousel {
@@ -45,7 +42,8 @@ body {
   scroll-snap-type: x mandatory;
   gap: 16px;
   padding: 1rem;
-  align-items: flex-start;
+  align-items: center;         /* alinha os cards verticalmente ao centro */
+  justify-content: center;     /* centraliza os cards horizontalmente */
   scroll-padding-left: 1rem;
   scroll-behavior: smooth;
   flex: 1;
@@ -59,13 +57,12 @@ body {
   border-radius: 16px;
   padding: 1rem;
   min-height: 240px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  font-size: 1.1rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  margin: 0 auto;               /* centraliza o card em relação ao container */
 }
 
 .card h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #ffcc00;
 }
@@ -77,22 +74,5 @@ body {
 
 .card li {
   margin-bottom: 0.4rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-/* Estilização específica para o card de Regras */
-.card.regras {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.card.regras ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.card.regras li {
-  margin-bottom: 1rem;
+  font-size: 0.95rem;
 }
