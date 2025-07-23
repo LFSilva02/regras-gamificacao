@@ -41,16 +41,15 @@ body {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
-  padding: 1rem;
-  align-items: center;
-  justify-content: center;
-  scroll-padding-left: 1rem;
+  padding: 1rem 0;
+  align-items: flex-start;
   scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
 }
 
 .card {
-  flex: 0 0 80%;
-  scroll-snap-align: start;
+  flex: 0 0 85%;
+  scroll-snap-align: center;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid #ffffff33;
   border-radius: 16px;
@@ -74,4 +73,20 @@ body {
 .card li {
   margin-bottom: 0.4rem;
   font-size: 0.95rem;
+}
+
+/* Específico para o card de Regras */
+.card.regras {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.card.regras ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card.regras li {
+  margin-bottom: 1rem;
 }
