@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #f88454, #1f125b);
+  font-family: Arial, sans-serif;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.recompensas {
+  position: sticky;
+  top: 0;
+  background: #111111cc;
+  padding: 1rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.recompensas h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.recompensas p {
+  font-size: 1rem;
+}
+
+.premios p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 1rem;
+  align-items: flex-start;
+  scroll-padding-left: 1rem;
+  scroll-behavior: smooth;
+  flex: 1;
+}
+
+.card {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff33;
+  border-radius: 16px;
+  padding: 1rem;
+  min-height: 240px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffcc00;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+.card li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
