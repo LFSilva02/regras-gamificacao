@@ -81,18 +81,18 @@ body {
   line-height: 1.6;
 }
 
-/* Estilo específico para a card de Regras */
-.card:last-child {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+/* Estilização específica para o card de Regras */
+.card.regras {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-.card:last-child ul {
+.card.regras ul {
   list-style: none;
   padding-left: 0;
 }
 
-.card:last-child li {
+.card.regras li {
   margin-bottom: 1rem;
 }
