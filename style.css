@@ -8,8 +8,8 @@ body {
   background: linear-gradient(90deg, #f88454, #1f125b);
   font-family: Arial, sans-serif;
   color: white;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
 }
@@ -42,11 +42,10 @@ body {
   scroll-snap-type: x mandatory;
   gap: 16px;
   padding: 1rem;
-  align-items: center;         /* alinha os cards verticalmente ao centro */
-  justify-content: center;     /* centraliza os cards horizontalmente */
+  align-items: center;
+  justify-content: center;
   scroll-padding-left: 1rem;
   scroll-behavior: smooth;
-  flex: 1;
 }
 
 .card {
@@ -58,7 +57,7 @@ body {
   padding: 1rem;
   min-height: 240px;
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
-  margin: 0 auto;               /* centraliza o card em relação ao container */
+  margin: 0 auto;
 }
 
 .card h2 {
