@@ -9,7 +9,6 @@ body {
   font-family: Arial, sans-serif;
   color: white;
   min-height: 100vh;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
 }
@@ -20,6 +19,7 @@ body {
   padding: 1rem;
   text-align: center;
   z-index: 10;
+  background: linear-gradient(90deg, #f88454, #1f125b);
 }
 
 .recompensas h1 {
@@ -38,25 +38,23 @@ body {
 
 .carousel {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1;
+  padding: 1rem;
   gap: 16px;
-  padding: 1rem 0;
-  align-items: flex-start;
   scroll-behavior: smooth;
-  overscroll-behavior-x: contain;
+  max-height: calc(100vh - 140px);
 }
 
 .card {
-  flex: 0 0 85%;
-  scroll-snap-align: center;
+  flex: 0 0 auto;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid #ffffff33;
   border-radius: 16px;
   padding: 1rem;
-  min-height: 240px;
+  min-height: 200px;
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
-  margin: 0 auto;
 }
 
 .card h2 {
@@ -75,11 +73,10 @@ body {
   font-size: 0.95rem;
 }
 
-/* Específico para o card de Regras */
 .card.regras {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid #ffffff44 !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5) !important;
 }
 
 .card.regras ul {
@@ -89,4 +86,5 @@ body {
 
 .card.regras li {
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
